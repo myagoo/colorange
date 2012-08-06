@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/flick/jquery-ui.css" media="screen" type="text/css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+        <script src="jquery.colorange.js"></script>
+        <script>
+        $('#slider').range({
+            values: [25, 100],
+            min: 0,
+            max: 150,
+            colors: ['red', 'orange', 'yellow'],
+            change: function(event, ui){
+                console.log(ui.values);
+            }
+        });
+        </script>
+    </head>
+    <body>
+        <div id="slider">
+        </div>
+    </body>
+</html>
