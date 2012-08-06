@@ -1,7 +1,7 @@
 (function($) {
     $.fn.extend({
         range: function(options) {
-            var options = $.extend({
+            options = $.extend({
                 colors: ['#EEE', '#333', '#666'],
                 min: 0,
                 max: 100,
@@ -13,7 +13,7 @@
 
             var draw = function(handle) {
                     var per = parseFloat(handle[0].style.left);
-                    if (handle.data('index.uiSliderHandle') == 0) {
+                    if (handle.data('index.uiSliderHandle') === 0) {
                         $('.ui-slider-left.ui-slider-range').width(per + '%');
                     }
                     else {
