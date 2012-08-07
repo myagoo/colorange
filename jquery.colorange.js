@@ -1,6 +1,6 @@
 (function($) {
     $.fn.extend({
-        range: function(options) {
+        colorange: function(options) {
             options = $.extend({
                 colors: ['#EEE', '#333', '#666'],
                 min: 0,

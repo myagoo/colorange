@@ -5,15 +5,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
         <script src="jquery.colorange.js"></script>
         <script>
-        $('#slider').range({
-            values: [25, 100],
-            min: 0,
-            max: 150,
-            colors: ['red', 'orange', 'yellow'],
-            change: function(event, ui){
-                console.log(ui.values);
-            }
-        });
+        (function($){
+            $(function(){
+                $('#slider').colorange({
+                values: [25, 100],
+                min: 0,
+                max: 150,
+                colors: ['red', 'orange', 'yellow'],
+                change: function(event, ui){
+                    console.log(ui.values);
+                }
+            });
+            });          
+                    
+        })(jQuery);
         </script>
     </head>
     <body>
